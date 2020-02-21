@@ -30,6 +30,7 @@ body {
   height: 50px;
   width: 50px;
   cursor: pointer;
+  text-align: center;
 }
 .btn-nav__home {
   border-radius: 50%;
@@ -41,4 +42,14 @@ body {
 #btn-home {
   height: 50px;
   width: 50 px;
+}
+
+.btn-nav:hover {
+  border: 3px solid white;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.btn-nav__active {
+  border: 3px solid white;
 }
