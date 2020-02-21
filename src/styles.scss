@@ -7,7 +7,7 @@
 body {
   font-size: 16px;
   margin: 0px;
-  background-color: floralwhite;
+  background-color: white;
 }
 
 .bottom-nav {
@@ -54,6 +54,21 @@ body {
   border: 3px solid white;
 }
 .header {
-  text-align: center;
   font-family: fantasy;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__nzlove {
+  height: 45px;
+  width: 45 px;
+}
+
+.header__headline {
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+
+.underline {
+  margin: 0px;
 }
