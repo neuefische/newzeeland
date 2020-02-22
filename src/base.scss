@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+/* This is the basic file . Only create classes and id's which are used 
+across the pages except the nav-bar (This is a component of the pages and is styled in the folder component). 
+For ex.: body, main, underline.
+The content of the different pages is styled in the folder pages.  */
+
 body {
   font-size: 16px;
   margin: 0px;
   background-color: white;
+}
+.underline {
+  margin: 0px;
 }
