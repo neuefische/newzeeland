@@ -4,81 +4,17 @@
   box-sizing: border-box;
 }
 
+@import "components/footer.scss";
+@import "components/header.scss";
+@import "components/nav.scss";
+@import "pages/home.scss";
+
 body {
   font-size: 16px;
   margin: 0px;
   background-color: white;
 }
 
-.bottom-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 60px;
-  background-color: rgba(2, 144, 51, 63%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.btn-nav {
-  background-color: rgba(195, 238, 130, 0.89);
-
-  outline: none;
-  font-size: 30px;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  text-align: center;
-}
-.btn-nav__home {
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
-  border: 3px solid darkgreen;
-}
-
-#btn-home {
-  height: 50px;
-  width: 50 px;
-}
-
-.btn-nav:hover {
-  border: 3px solid white;
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1);
-}
-
-.btn-nav__active {
-  border: 3px solid white;
-}
-.header {
-  font-family: fantasy;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.header__nzlove {
-  height: 45px;
-  width: 45 px;
-}
-
-.header__headline {
-  font-size: 25px;
-  margin-bottom: 2px;
-}
-
 .underline {
   margin: 0px;
-}
-
-.main__signin {
-  font-family: fantasy;
-}
-.main__signin_input {
-  height: 20px;
-  width: 150px;
-  border: 1px solid black;
-  padding: 10px;
 }
