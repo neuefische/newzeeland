@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* This file contains the header styling across all pages. */
+
+.header {
+  font-family: fantasy;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__nzlove {
+  height: 45px;
+  width: 45 px;
+}
+
+.header__headline {
+  font-size: 25px;
+  margin-bottom: 2px;
+}
