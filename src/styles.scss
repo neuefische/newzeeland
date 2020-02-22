@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+/* This is the main styling file. It contains the imports from the 
+components and pages. It contains also the main structure from the project except navbar and footer. */
+
 @import "components/footer.scss";
 @import "components/header.scss";
 @import "components/nav.scss";
