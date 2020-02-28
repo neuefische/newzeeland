@@ -2,10 +2,21 @@
 
 .main__signin {
   font-family: fantasy;
+  justify-content: center;
 }
 .main__signin_input {
   height: 20px;
   width: 150px;
   border: 1px solid black;
   padding: 10px;
+}
+
+.main {
+  width: 50%;
+  display: flex;
+}
+
+#copyright {
+  font-size: small;
+  justify-content: center;
 }
