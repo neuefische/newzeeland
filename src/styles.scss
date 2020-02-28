@@ -7,10 +7,17 @@
 /* This is the main styling file. It contains the imports from the 
 components and pages. It contains also the main structure from the project except navbar and footer. */
 
+//Component import
 @import "components/footer.scss";
 @import "components/header.scss";
 @import "components/nav.scss";
+
+//Pages import
 @import "pages/home.scss";
+@import "pages/fauna.scss";
+@import "pages/flora.scss";
+@import "pages/movie.scss";
+@import "pages/music.scss";
 
 body {
   font-size: 16px;
