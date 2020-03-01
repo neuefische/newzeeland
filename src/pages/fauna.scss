@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 3px solid green;
+  margin: 10px;
+  background-color: rgba(195, 238, 130, 0.89);
+  margin-bottom: 60px;
 }
 
 .cardheader {
@@ -10,5 +14,10 @@
 
 .cardimage {
   justify-content: center;
-  margin-left: 45px;
+  width: 200px;
+  border: 2px solid green;
+}
+
+.cardtext {
+  padding: 15px;
 }
