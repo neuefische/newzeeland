@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardheader {
+  text-align: center;
+}
+
+.cardimage {
+  justify-content: center;
+  margin-left: 45px;
+}

@@ -1,20 +1,32 @@
 .main {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
 }
 
-.cardheading {
+.moviecard {
+  border: 3px solid darkgreen;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 80px;
+  background-color: rgba(195, 238, 130, 0.89);
+}
+
+.moviecardheading {
   font-family: fantasy;
   text-align: center;
 }
 
-.cardimage {
-  width: 320px;
+.moviecardimage {
+  width: 200px;
+  border: 2px solid green;
+  justify-content: center;
 }
 
-.cardtext {
-  padding-bottom: 55px;
+.moviecardtext {
+  padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  font-family: fantasy;
 }

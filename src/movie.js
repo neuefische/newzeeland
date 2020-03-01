@@ -20,10 +20,10 @@ function card() {
   const image = document.createElement("img");
   const text = document.createElement("p");
 
-  container.className = "card";
-  heading.className = "cardheading";
-  image.className = "cardimage";
-  text.className = "cardtext";
+  container.className = "moviecard";
+  heading.className = "moviecardheading";
+  image.className = "moviecardimage";
+  text.className = "moviecardtext";
 
   const headingText = document.createTextNode("Hobbingen");
   image.src = "pictures/hobbiton.jpg";
