@@ -1,12 +1,15 @@
-let changeImagePath = "pictures/neuseelandberge.jpg";
+const picturearray = [
+  "pictures/neuseelandberge.jpg",
+  "pictures/neuseelandhaus.jpeg",
+  "pictures/neuseelandstrand.jpg"
+];
 
 function startimage(image_path) {
   const floraContainer = document.createElement("div");
   floraContainer.className = "main_container";
   const floraCreateImage = document.createElement("img");
   floraCreateImage.id = "main_image";
-  image_path = changeImagePath;
-  floraCreateImage.src = image_path;
+  floraCreateImage.src = picturearray[0];
 
   floraContainer.appendChild(floraCreateImage);
 
@@ -17,19 +20,33 @@ startimage();
 
 const imagecatcher = document.getElementById("main_image");
 
-setInterval(() => {
-  setTimeout(function picturehouse() {
-    changeImagePath = "pictures/neuseelandhaus.jpeg";
-    imagecatcher.src = changeImagePath;
-  }, 3000);
+const houseInterval = setInterval(function picturehouse() {
+  imagecatcher.src = picturearray[0];
+}, 4000 + Math.random());
 
-  setTimeout(function picturebeach() {
-    changeImagePath = "pictures/neuseelandstrand.jpg";
-    imagecatcher.src = changeImagePath;
-  }, 6000);
+const beachInterval = setInterval(function picturebeach() {
+  imagecatcher.src = picturearray[1];
+}, 7000 + Math.random());
 
-  setTimeout(function picturehills() {
-    changeImagePath = "pictures/neuseelandberge.jpg";
-    imagecatcher.src = changeImagePath;
-  }, 9000);
-}, 9001);
+const hillsInterval = setInterval(function picturehills() {
+  imagecatcher.src = picturearray[2];
+}, 10000 + Math.random());
+
+const imageShowSwitch = document.createElement("button");
+imageShowSwitch.id = "switchBtn";
+imageShowSwitch.innerText = "Start/Stop";
+document.querySelector(".flora_main").appendChild(imageShowSwitch);
+
+let imageStopCount = "0";
+let btnImageClick = document.getElementById("switchBtn");
+
+btnImageClick.addEventListener("click", stopImageShow);
+btnImageClick.addEventListener("click", startImageShow);
+
+function stopImageShow() {
+  clearInterval(beachInterval);
+  clearInterval(houseInterval);
+  clearInterval(hillsInterval);
+}
+
+function startImageShow() {}
