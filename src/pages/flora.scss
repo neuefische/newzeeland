@@ -1,0 +1,19 @@
+.flora_body {
+  background-color: rgba(2, 144, 51, 63%);
+}
+
+.flora_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(2, 144, 51, 63%);
+}
+
+#switchBtn {
+  flex-basis: 50%;
+  min-height: 40px;
+  align-self: flex-end;
+  background-color: rgba(2, 144, 51, 63%);
+  border-radius: 60%;
+  margin-bottom: 3px;
+}
