@@ -1,0 +1,20 @@
+.main {
+  display: flexbox;
+  flex-direction: column;
+}
+
+.cardheading {
+  font-family: fantasy;
+  text-align: center;
+}
+
+.cardimage {
+  width: 320px;
+}
+
+.cardtext {
+  padding-bottom: 55px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
