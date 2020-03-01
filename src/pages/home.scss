@@ -1,19 +1,36 @@
 /* This scss files contains the styling classes and id's only used from the Home page.*/
 
+.mainhome {
+  display: flex;
+  flex-direction: column;
+}
+
+.kiwisign {
+  margin-top: 80px;
+  width: 100px;
+  justify-content: center;
+}
+
+.newsign {
+  text-align: center;
+}
+
 .main__signin {
   font-family: fantasy;
-  justify-content: center;
+  width: 200px;
+  border: 3px solid green;
+  margin: 10px;
+  background-color: rgba(195, 238, 130, 0.89);
+  text-align: center;
+  margin-left: 60px;
 }
 .main__signin_input {
   height: 20px;
   width: 150px;
   border: 1px solid black;
   padding: 10px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column-reverse;
+  text-align: center;
+  font-family: fantasy;
 }
 
 #copyright {
